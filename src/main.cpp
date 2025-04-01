@@ -97,8 +97,8 @@ void loop() {
     ly_axis = abs(ly_axis) < 2000 ? 0 : ly_axis;
 
     int Lmotor_trimmed = constrain(constrain(ly_axis + rx_axis, -32768, 32768) > 0 ? 
-                         constrain(ly_axis + rx_axis, -32768, 32768) * 1.1 :                   //Left forward
-                         constrain(ly_axis + rx_axis, -32768, 32768) * 1.2, -32768, 32768);  //Left backward
+                         constrain(ly_axis + rx_axis, -32768, 32768) * 1 :                   //Left forward
+                         constrain(ly_axis + rx_axis, -32768, 32768) * 1, -32768, 32768);  //Left backward
 
     int Rmotor_trimmed = constrain(constrain(ly_axis - rx_axis, -32768, 32768) > 0 ? 
                          constrain(ly_axis - rx_axis, -32768, 32768) * 1 :                 //Right forward
