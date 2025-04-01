@@ -4,6 +4,8 @@
 #include "ESC.h" // RC_ESP library installed by Library Manager
 #include <FastLED.h> // FastLED library installed by Library Manager
 
+//ESC.h line 16 modified to use ESP32Servo library instead of Servo library
+
 #define DriveL D5
 #define DriveR D6
 #define Weapon D1
